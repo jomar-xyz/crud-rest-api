@@ -11,14 +11,14 @@ app.get("/", (req, res) => {
   res.send("Hi from server!");
 });
 
-axios.post(`http://gpu1.ailan:1111/generate_email`,{ email: "dadlskjf", initial: "initial" }).then(res=>{
-    console.log('res', res.body)
-    // res.status(200).json({
-    //   ...res.data
-    // });
-  }).catch(err => {
-    console.log('err', err)
-  })
+// axios.post(`http://gpu1.ailan:1111/generate_email`,{ email: "dadlskjf", initial: "initial" }).then(res=>{
+//     console.log('res', res.body)
+//     // res.status(200).json({
+//     //   ...res.data
+//     // });
+//   }).catch(err => {
+//     console.log('err', err)
+//   })
 
 app.post("/", (req, res) => {
   axios.post(`http://gpu1.ailan:1111/generate_email`,{
