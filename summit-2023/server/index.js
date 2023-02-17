@@ -30,6 +30,6 @@ app.post("/", (req, res) => {
   })
 });
 
-app.listen(8080, () => {
+app.listen(6969, () => {
   console.log("server running...");
 });
