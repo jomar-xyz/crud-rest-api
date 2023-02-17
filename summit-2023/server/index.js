@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
 //   })
 
 app.post("/", (req, res) => {
-  axios.post(`http://gpu1.ailan:1111/generate_email`,{
+  axios.post(`http://216.194.115.147:8111/generate_email`,{
     ...req.body
   }).then(res=>{
     res.status(200).json({
